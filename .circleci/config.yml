@@ -28,9 +28,8 @@ jobs:
       - run:
           name: Deploy to Railway App
           command: |
-            cd bankchurn-api 
-            railway link projectid serviceid
-            railway up --detach
+            cd bankchurn-api
+            railway up --service=gleaming-quietude -d
 
 
 tags_only: &tags_only
